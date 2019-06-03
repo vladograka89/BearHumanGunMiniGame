@@ -59,7 +59,7 @@ function playGame() {
     var computerChoice = getComputerChoice();
     console.log(userChoice);
     console.log(computerChoice);
-    console.log(determineWinner(userChoice, computerChoice));
+    alert(determineWinner(userChoice, computerChoice));
 }
 
 //Play the Game!
