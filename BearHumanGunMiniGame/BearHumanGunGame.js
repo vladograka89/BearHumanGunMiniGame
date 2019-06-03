@@ -8,7 +8,8 @@ function getUserChoice(userInput) {
     {
         return userInput;
     } else {
-        console.log('Please enter valid option')
+        alert('Please enter valid option')
+        
     }
 }
 
@@ -57,8 +58,9 @@ function playGame() {
     var promptUserChoice = prompt('Please choose bear, human or gun');
     var userChoice = getUserChoice(promptUserChoice);
     var computerChoice = getComputerChoice();
-    console.log(userChoice);
-    console.log(computerChoice);
+
+    alert('The user chose: ' + userChoice);
+    alert('The computer chose: ' + computerChoice);
     alert(determineWinner(userChoice, computerChoice));
 }
 
